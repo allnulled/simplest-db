@@ -21,6 +21,43 @@
             return new this(...args);
         }
 
+        static getFS() {
+            if(this.$fs) {
+                return this.$fs;
+            }
+            this.$fs = new SimplestDB({
+                schema: "system",
+                tables: {
+                    "fs": {
+                        columns: {
+                            "path": { is_type: "string" },
+                            "contents": { is_type: "string" },
+                            "metadata": { is_type: "object" },
+                        }
+                    }
+                }
+            });
+            return this.$fs;
+        }
+
+        static getCache() {
+            if(this.$cache) {
+                return this.$cache;
+            }
+            this.$cache = new SimplestDB({
+                schema: "system",
+                tables: {
+                    "cache": {
+                        columns: {
+                            "key": { is_type: "string" },
+                            "value": { is_type: "string" },
+                        }
+                    }
+                }
+            });
+            return this.$cache;
+        }
+
         constructor(schema = {}) {
             if(typeof schema !== "object") throw new Error("Required «schema» to be an object [0301]");
             if(typeof schema.schema !== "string") throw new Error("Required «schema.schema» to be a string [0302]");
@@ -256,9 +293,6 @@
         }
 
     }
-
     SimplestDB.default = SimplestDB;
-
     return SimplestDB;
-
 }, this);

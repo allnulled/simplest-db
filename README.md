@@ -101,10 +101,39 @@ db.update("fichero", 1, {
 db.delete("fichero", 1);
 ```
 
-## 4. License
+## 4. Features
+
+Some **enjoyable** features:
+
+- Fully synchronous API.
+- Browser (`localStorage`) and node.js (`require("fs")`) support.
+
+Some **missing** features:
+
+- NO support for automatic column checkings, only for table checking. To do so, override `validateRow` method.
+
+### 4.1. Extra features
+
+Since version `1.0.3`, `@allnulled/simplest-db` comes with 2 extra APIs: **Cache API** and **Filesystem API**.
+
+The **Filesystem API**:
+
+- Included API for files at: `SimplestDB.getFS()`.
+  - Contains a `SimplestDB` instance with `"system"` as schema (so: `./sdb_modules/system.data.json` or `localStorage.SDB_STORAGE_FOR_system`).
+  - Accepts tables: `fs`.
+  - Accepts columns: `fs.path`, `fs.contents`, `fs.metadata`.
+
+The **Cache API**:
+
+- Included API for cache at: `SimplestDB.getCache()`.
+  - Contains a `SimplestDB` instance with `"system"` as schema too (so also: `./sdb_modules/system.data.json` or `localStorage.SDB_STORAGE_FOR_system`).
+  - Accepts tables: `cache`.
+  - Accepts columns: `cache.key`, `cache.value`.
+
+## 5. License
 
 No license.
 
-## 5. Why?
+## 6. Why?
 
 To have another awesome javascript database. Synchronous. Light. Simpler.
