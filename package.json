@@ -1,0 +1,16 @@
+{
+  "name": "simplest-db",
+  "version": "1.0.0",
+  "description": "Small synchronous database implementation for node.js and browsers",
+  "main": "./src/simplest-db.js",
+  "directories": {
+    "test": "test"
+  },
+  "browser": "./src/simplest-db.js",
+  "scripts": {
+    "test": "node test/test.test.js"
+  },
+  "keywords": [],
+  "author": "allnulled",
+  "license": "WTFPL"
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimplestDB</title>
+    <script src="../src/simplest-db.js"></script>
+</head>
+<body>
+    <pre id="errores"></pre>
+    <script>
+        try {
+            const db = window.SimplestDB.create({
+                schema: "SimplestDB--Functional-kernel@1.0.0",
+                tables: {
+                    fichero: {
+                    columns: {
+                            ruta: {
+                                is_type: "string"
+                            }
+                        }
+                    },
+                    ejecutable: {
+                    columns: {
+                            ruta: {
+                                is_type: "string"
+                            }
+                        }
+                    },
+                    cache: {
+                    columns: {
+                            ruta: {
+                                is_type: "string"
+                            }
+                        }
+                    }
+                }
+            });
+            const id1 = db.insert("fichero", { ruta: "/root/1.js" });
+            const id2 = db.insert("fichero", { ruta: "/root/2.js" });
+            const id3 = db.insert("fichero", { ruta: "/root/3.js" });
+            db.update("fichero", id1, { contenido: "x" });
+            db.update("fichero", id2, { contenido: "x" });
+            db.update("fichero", id3, { contenido: "x" });
+            db.delete("fichero", id1);
+            db.delete("fichero", id2);
+            db.delete("fichero", id3);
+            document.getElementById("errores").textContent = "Test passed successfully.";
+        } catch (error) {
+            document.getElementById("errores").textContent = "Error: " + error.name + "\nMessage: " + error.message + "\nStack: " + error.stack;
+        }
+    </script>
+</body>
+</html>
