@@ -291,8 +291,10 @@
             this.validateTable(tableId);
             return this.setData(tableId, instanceId, undefined);
         }
-
     }
+  
     SimplestDB.default = SimplestDB;
+
     return SimplestDB;
+
 }, this);

@@ -12,7 +12,7 @@ Small synchronous database implementation for node.js and browsers.
 
 ## 2. How it works
 
-This script of 270 lines approx. works the same for `node.js` and `browser`.
+This script works the same for `node.js` and `browser`.
 
 What the script is thought for, is to be used as `synchronous database` for both `javascript` environments.
 
