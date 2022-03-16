@@ -9,7 +9,7 @@
     if(typeof module === "object") {
         module.exports = output;
     }
-    if(typeof Ripex === "object") {
+    if((typeof Ripex === "object") && (typeof Ripex.$exportar_modulo === "function")) {
         Ripex.$exportar_modulo("SimplestDB", output);
     }
     return output;
