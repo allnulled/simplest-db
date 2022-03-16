@@ -1,8 +1,8 @@
 # simplest-db
 
-[![NPM](https://nodeico.herokuapp.com/@allnulled/simplest-db.svg)](https://www.npmjs.com/@allnulled/simplest-db)
-
 Small synchronous database implementation for node.js and browsers.
+
+[![NPM](https://nodeico.herokuapp.com/@allnulled/simplest-db.svg)](https://www.npmjs.com/@allnulled/simplest-db)
 
 ## 1. Installation
 
