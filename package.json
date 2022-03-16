@@ -1,6 +1,6 @@
 {
   "name": "@allnulled/simplest-db",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Small synchronous database implementation for node.js and browsers",
   "main": "./src/simplest-db.js",
   "directories": {
@@ -10,7 +10,13 @@
   "scripts": {
     "test": "node test/test.test.js"
   },
-  "keywords": ["database","db","sync","localStorage","fs"],
+  "keywords": [
+    "database",
+    "db",
+    "sync",
+    "localStorage",
+    "fs"
+  ],
   "author": "allnulled",
   "license": "WTFPL",
   "repository": {
