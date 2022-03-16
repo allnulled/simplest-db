@@ -10,7 +10,15 @@
   "scripts": {
     "test": "node test/test.test.js"
   },
-  "keywords": [],
+  "keywords": ["database","db","sync","localStorage","fs"],
   "author": "allnulled",
-  "license": "WTFPL"
+  "license": "WTFPL",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allnulled/simplest-db.git"
+  },
+  "bugs": {
+    "url": "https://github.com/allnulled/simplest-db/issues"
+  },
+  "homepage": "https://github.com/allnulled/simplest-db#readme"
 }

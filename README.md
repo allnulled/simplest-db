@@ -1,5 +1,7 @@
 # simplest-db
 
+[![NPM](https://nodei.co/npm/simplest-db.png?stars&downloads)](https://www.npmjs.com/package/simplest-db)
+
 Small synchronous database implementation for node.js and browsers.
 
 ## 1. Installation
