@@ -1,13 +1,13 @@
 # simplest-db
 
-[![NPM](https://nodei.co/npm/simplest-db.png?stars&downloads)](https://www.npmjs.com/package/simplest-db)
+[![NPM](https://nodeico.herokuapp.com/@allnulled/simplest-db.svg?stars&downloads)](https://www.npmjs.com/@allnulled/simplest-db)
 
 Small synchronous database implementation for node.js and browsers.
 
 ## 1. Installation
 
 ```sh
-~$ npm i -s simplest-db
+~$ npm i -s @allnulled/simplest-db
 ```
 
 ## 2. How it works
@@ -39,7 +39,7 @@ If case you use `webpack` or `browserify` or some tool to pack your browser scri
 In node.js:
 
 ```js
-const SimplestDB = global.SimplestDB || require("simplest-db");
+const SimplestDB = global.SimplestDB || require("@allnulled/simplest-db");
 ```
 
 In browser:
@@ -47,6 +47,8 @@ In browser:
 ```js
 const SimplestDB = window.SimplestDB;
 ```
+
+Note: the `import` syntax of ES6 will also work.
 
 ### 3.3. Create database:
 

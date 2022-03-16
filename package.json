@@ -1,5 +1,5 @@
 {
-  "name": "simplest-db",
+  "name": "@allnulled/simplest-db",
   "version": "1.0.0",
   "description": "Small synchronous database implementation for node.js and browsers",
   "main": "./src/simplest-db.js",
